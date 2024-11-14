@@ -38,6 +38,12 @@ android {
         }
     }
 }
+apply plugin: 'kotlin-android'
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'io.flutter:flutter_embedding_debug:1.0.0'
+}
 
 flutter {
     source = "../.."
